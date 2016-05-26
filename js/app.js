@@ -27,7 +27,7 @@ function show()   /* Функция происходит при нажатии �
             }
 
             $(document).ready(function(){
-              $("#minarelli-h, #minarelli-v, #3kj, #hiper, #af18, #af34, #morini, #bigblock").click(function(){
+              $("#minarelli-h, #minarelli-v, #3kj, #hiper, #af18, #af34, #morini, #bigblock").click(function( event ){
                 select_engine();
               });
             });
