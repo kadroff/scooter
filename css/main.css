@@ -1,0 +1,63 @@
+body {
+  background-color: #E9E9E9;
+}
+
+.navbar {
+  background-color: #2C3E50;
+  height: 70px;
+  border-bottom: 4px solid #3498DB;
+  position: absolute;
+  color: black;
+  font-size: 24;
+}
+
+.main-block {
+  width: 1100px;
+  height: 600px;
+  background-color: white;
+  position: absolute;
+  top: 110px;
+  left: 120px;
+  border-radius: 18px;
+}
+
+.welcome-text {
+  font-size: 28px;
+  position: relative;
+  top: 40px;
+  right: -18px;
+  color: #3498DB;
+}
+
+.navbar-inverse .navbar-nav > li > a  {
+  color: #7f8c8d;
+  margin-top: 8px;
+}
+
+.select-engine-left {
+  font-size: 38px;
+  position: relative;
+  top: 100px;
+  list-style-type: none;
+  line-height: 100px;
+}
+
+.select-engine-right {
+  font-size: 38px;
+  position: relative;
+  top: -310px;
+  right: -653px;
+  list-style-type: none;
+  line-height: 100px;
+  width: 300px;
+}
+
+.tuning li {
+  font-size: 38px;
+  position: relative;
+  top: 100px;
+  text-align: center;
+  list-style-type: none;
+  line-height: 100px;
+  /*display:inline-block*/ /* горизонтальное выравнивание */
+}
