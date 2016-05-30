@@ -22,7 +22,7 @@
             </div>
             <div class="collapse navbar-collapse" id="responsive-menu">
               <ul class="nav navbar-nav">
-                <!-- <li><img src="image/test.png"></li></img> -->
+                <!-- <li><img src="image/test-logo.png"></li></img> -->
                 <li><a href="index.php">Главная</a></li>
                 <li><a href="#">Связаться с нами</a></li>
               </ul>
