@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="js/bootstrap.min.js" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <script src="js/jquery-2.2.3.min.js"></script>
@@ -31,7 +32,7 @@
     </div>
   </div>
 
-    <div class="container">
+      
       <div class="main-block">
           <p class="welcome-text">Мы поможем тебе подобрать любые запчасти для твоего двухколесного друга</p>
           <!-- <img src="image/Без имени.png"></img> -->
@@ -42,6 +43,7 @@
       </div>
     </div>
   </div>
+
 
 </body>
 </html>
