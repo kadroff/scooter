@@ -8,10 +8,12 @@
       <script src="js/app.js"></script>
   </head>
   <body>
-    <ul class="tuning">
-      <li id="stunt"><a>Стант</li></a>
-      <li id="kolco">Кольцевые гонки</li>
-      <li>Бюджетный</li>
-    </ul>
+    <div class="container">
+      <ul class="tuning">
+        <li id="stunt"><a>Стант</li></a>
+        <li id="kolco">Кольцевые гонки</li>
+        <li>Бюджетный</li>
+      </ul>
+    </div>  
   </body>
   </html>

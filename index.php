@@ -50,7 +50,7 @@
           <p class="welcome-text">Мы поможем тебе подобрать любые запчасти для твоего двухколесного друга</p>
           <!-- <img src="image/Без имени.png"></img> -->
 
-            <input type="submit" id="click" value="Вступить в клуб" />
+            <input type="submit" id="click" value="Подобрать" />
           </form>
 
       </div>

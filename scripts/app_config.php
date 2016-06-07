@@ -2,7 +2,7 @@
     define("DATABASE_HOST", "localhost");
     define("DATABASE_USERNAME", "root");
     define("DATABASE_PASSWORD", "root");
-    define("DATABASE_NAME", "news");
+    define("DATABASE_NAME", "scooter-parts");
 
 
  ?>
