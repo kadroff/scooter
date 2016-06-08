@@ -1,5 +1,12 @@
 <?php
-    $mysqli = new mysqli("localhost", "root", "root", "scooter-parts") or die("не получилось подключиться к БД");
+      $url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+      $server = $url["host"];
+      $username = $url["user"];
+      $password = $url["pass"];
+      $db = substr($url["path"],1);
+
+    $mysqli = new mysqli($server, $username, $password, $db) or die("не получилось подключиться к БД");
 
     $result = $mysqli->query("SELECT * FROM `scooter`  ") or die('не получилось установить свзять с table scooter');
 

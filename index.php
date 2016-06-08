@@ -43,9 +43,9 @@
       </div>
     </div>
   </div>
-</div>
 
-    <div class="container">
+
+
       <div class="main-block">
           <p class="welcome-text">Мы поможем тебе подобрать любые запчасти для твоего двухколесного друга</p>
           <!-- <img src="image/Без имени.png"></img> -->
@@ -55,7 +55,7 @@
 
       </div>
 </div>
-
+</div>
 
 
 </body>
