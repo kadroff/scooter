@@ -1,5 +1,7 @@
 <?php
- require 'install.php';
+
+ require 'seeds.php';
+ $sql= $mysqli->query("SELECT * FROM `Motors`");
 
 ?>
 <html>
@@ -8,9 +10,12 @@
 </head>
 <body>
   <ul>
-    <li><a href="motors.php?id=1">Motors1</li></a>
-    <li><a href="motors.php?id=2">Motors2</li></a>
-    <li><a href="motors.php?id=3">Motors3</li></a>
+   <a href="motors.php?id=1"><?php foreach ($sql as $value) {
+    echo "<li>". $value['name']. "</li>";
+      
+    } ?></a>
+    <li><a href="motors.php?id=2"></li></a>
+    <li><a href="motors.php?id=3"></li></a>
 
   </ul>
 </body>
