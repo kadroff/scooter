@@ -1,22 +1,23 @@
 <?php
-  require 'config.php';
+require 'config.php';
 
-  $id = $_GET['id'];
+$id = $_GET['id'];
 
- $select = $mysqli->query("SELECT Cylindres.id, Cylindres.name
- from Cylindres inner join motors_cylindres
- on motors_cylindres.cylindres_id=Cylindres.id
- where motors_cylindres.motors_id=$id");
-
- ?>
- <html>
-   <head>
-     <meta charset="utf-8">
+$cylindres = $mysqli->query("SELECT Cylindres.id, Cylindres.name
+from Cylindres inner join Motors_Cylindres
+on Motors_Cylindres.cylindre_id=Cylindres.id
+where Motors_Cylindres.motor_id=$id");
+?>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Scooter-tuning</title>
   </head>
 <body>
-  <ul>
-    <?php foreach ($select as $value ) {
-     echo "<li>" . $value['name'] . "</li>";
-    } ?>
+  <?php
+  while ($cylindre = $cylindres->fetch_object()){
+    echo "<li>$cylindre->name</li>";
+  }
+  ?>
 </body>
 </html>

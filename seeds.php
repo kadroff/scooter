@@ -1,42 +1,26 @@
 <?php
-  require 'config.php';
+require 'config.php';
 
-  $sql ="CREATE TABLE Motors
-(
-  name VARCHAR(128),
-  id INT AUTO_INCREMENT PRIMARY KEY
-)";
+$mysqli->query("
+  INSERT INTO Motors (id, name) VALUES
+  (1, 'motor_test1'),
+  (2, 'motor_test2'),
+  (3, 'motor_test3')
+");
 
-  $sql = "INSERT INTO Motors (id, name) VALUES
-(1, 'motors_test1'),
-(2, 'motors_test2'),
-(3, 'motors_test3')";
+$mysqli->query("
+  INSERT INTO Cylindres (id, name) VALUES
+  (1, 'cylindre_test1'),
+  (2, 'cylindre_test2'),
+  (3, 'cylindre_test3')
+");
 
- $sql ="CREATE TABLE motors_cylindres
- (
-   motors_id INT,
-   cylindres_id INT
- )";
+$mysqli->query("
+  INSERT INTO Motors_Cylindres (motor_id, cylindre_id) VALUES
+  (1, 2),
+  (1, 3),
+  (2, 1)
+");
 
- $sql= "INSERT INTO motors_cylindres (motors_id, cylindres_id) VALUES
-(1, 2),
-(1, 3),
-(2, 1)";
-
- $sql = "CREATE TABLE Cylindres
-(
-   name VARCHAR (128),
-   id  INT PRIMARY KEY AUTO_INCREMENT
-)";
-
-  $sql = "INSERT INTO Cylindres (id, name) VALUES
-(1, 'cylindres_test1'),
-(2, 'cylindres_test2'),
-(3, 'cylindres_test3')";
-
-
-  $mysqli->query($sql);
-
-
-
- ?>
+$mysqli->close();
+?>
