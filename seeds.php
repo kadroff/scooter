@@ -22,5 +22,19 @@ $mysqli->query("
   (2, 1)
 ");
 
+$mysqli->query("
+  INSERT INTO Variators (id, name) VALUES
+  (1, 'variator_test1'),
+  (2, 'variator_test2'),
+  (3, 'variator_test3')
+");
+
+$mysqli->query("
+  INSERT INTO Motors_Variators (motor_id, variator_id) VALUES
+  (1, 2),
+  (1, 3),
+  (2, 1)
+");
+
 $mysqli->close();
 ?>
